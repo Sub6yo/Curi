@@ -37,6 +37,15 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan bot ini dengan bijak.
 <details>
 <summary><h3><b>🔗 Extra Custom & List Vars</b></h3></summary>
 
+## Deploy on Koyeb
+
+The fastest way to deploy the application is to click the **Deploy to Koyeb** button below.
+
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/IndomieGorengSatu/repo-4-buttons&branch=develop&name=repo-4-buttons)
+
+<details>
+<summary><h3><b>🔗 Extra Custom & List Vars</b></h3></summary>
+
 ### Variables
 
 * `API_HASH` Dapatkan API HASH di web my.telegram.org.
