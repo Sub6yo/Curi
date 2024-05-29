@@ -10,3 +10,4 @@ speedtest-cli
 TgCrypto
 wget
 pymongo
+sqlalchemy==2.0.30
