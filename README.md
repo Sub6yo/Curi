@@ -30,25 +30,11 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan bot ini dengan bijak.
 
 The fastest way to deploy the application is to click the **Deploy to Koyeb** button below.
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/IndomieGorengSatu/repo-4-buttons&branch=develop&name=repo-4-buttons)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Yudacakep/Sub-4-&branch=develop&name=repo-4-buttons)
 
 <details>
 <summary><h3><b>🔗 Extra Custom & List Vars</b></h3></summary>
-
-### Deploy on Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://risman.vercel.app/file-deploy.html)</br>
-
-**Tonton Video Tutorial Ini di YouTube untuk Bantuan memasang di Heroku**<br>
-<a href="https://youtu.be/O2tieQgzYZg">
-  <img src="https://img.shields.io/badge/How%20to-Deploy-red?logo=youtube" width="147">
-</a><br>
-
-<details>
-<summary><h3><b>🔗 Extra Custom & List Vars</b></h3></summary>
-
-<details>
-<summary><h3><b>🔗 Extra Custom & List Vars</b></h3></summary>
-
+  
 ### Variables
 
 * `API_HASH` Dapatkan API HASH di web my.telegram.org.
