@@ -1,13 +1,12 @@
-# (©)Codexbotz
-
-
-
+ #(©) @IndomieProject
 
 import logging
 import os
+from distutils.util import strtobool
+from dotenv import load_dotenv
 from logging.handlers import RotatingFileHandler
 
-
+load_dotenv("config.env")
 
 # Bot token dari @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
@@ -21,39 +20,28 @@ API_HASH = os.environ.get("API_HASH", "")
 # ID Channel Database
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
-# NAMA OWNER
-OWNER = os.environ.get("OWNER", "")
+# Protect Content
+PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 
-# Custom Repo for updater.
-UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
-
 #Port
 PORT = os.environ.get("PORT", "8080")
 
-# Database
+# Custom Repo for updater.
+UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
+
+#Database 
 DB_URI = os.environ.get("DATABASE_URL", "")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB = {}
-FORCE_SUB_COUNTER = 1
-while True:
-    key = f"FORCE_SUB{FORCE_SUB_COUNTER}"
-    value = os.environ.get(key)
-    if value is None:
-        break
-    FORCE_SUB[FORCE_SUB_COUNTER] = int(value)
-    FORCE_SUB_COUNTER += 1
-
-# Berapa baris maunya
-BUTTONS_PER_ROW = int(os.environ.get("BUTTONS_PER_ROW", "3"))
-
-# Tulisan joinnya mau gimana
-BUTTONS_JOIN_TEXT = os.environ.get("BUTTONS_JOIN_TEXT", "ᴊᴏɪɴ")
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
+FORCE_SUB_GROUP2 = int(os.environ.get("FORCE_SUB_GROUP2", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -76,10 +64,8 @@ FORCE_MSG = os.environ.get(
 # Atur Teks Kustom Anda di sini, Simpan (None) untuk Menonaktifkan Teks Kustom
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
-# Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
-# Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban 🤪
-ADMINS.extend((844432220, 1250450587, 1750080384, 182990552))
-
+# Setel True jika Anda ingin Menonaktifkan tombol Bagikan Kiriman Saluran Anda
+DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "False"))
 
 LOG_FILE_NAME = "logs.txt"
 logging.basicConfig(
