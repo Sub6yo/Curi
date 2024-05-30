@@ -9,7 +9,7 @@ from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
 
-from config import
+from config import (
      API_HASH,
      APP_ID,
      LOGGER,
