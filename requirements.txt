@@ -1,13 +1,9 @@
-aiohttp
-feedparser
-gitpython
-heroku3
-psycopg2-binary
+# --- For-Bot-Working --------- #
 pyrogram
-python-dotenv
-Pyromod==1.5
-speedtest-cli
 TgCrypto
-wget
+Pyromod==1.5
+# --- For-Database ------------ #
 pymongo
-sqlalchemy==2.0.30
+dnspython
+# --- For-Web-Response ------- #
+aiohttp
